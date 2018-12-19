@@ -1,9 +1,14 @@
-var map;
+let map;
+let pacman;
 
 function setup() {
-    map = new Map(300, 400);
+    map = new Map(560, 640);
+    pacman = new Pacman(map,58);
 }
 
 function draw() {
-    //background(220);
+    map.draw();
+    pacman.draw();
+
 }
+
